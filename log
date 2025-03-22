@@ -238,3 +238,15 @@ exercises.c:126:10: error: invalid type argument of unary '*' (have 'int')
           ^~~~~~~~~~
 Compilation failed
 3e6d982
+Fri, Mar 21, 2025 11:21:17 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:126:23: error: dereferencing 'void *' pointer [-Werror]
+       if(cadena[i] != *top(pila1)) return 0;
+                       ^~~~~~~~~~~
+exercises.c:126:23: error: void value not ignored as it ought to be
+cc1.exe: all warnings being treated as errors
+Compilation failed
+70586ef
