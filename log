@@ -165,3 +165,13 @@ exercises.c:123:25: error: invalid type argument of unary '*' (have 'int')
                          ^~~~~~~~~~~~
 Compilation failed
 059bf0b
+Fri, Mar 21, 2025 11:15:13 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:123:7: error: invalid use of void expression
+       push(pila1, (void)(cadena[i]));
+       ^~~~
+Compilation failed
+45647a9
