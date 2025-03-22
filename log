@@ -228,3 +228,13 @@ exercises.c:126:20: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 88c5881
+Fri, Mar 21, 2025 11:21:03 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:126:10: error: invalid type argument of unary '*' (have 'int')
+       if(*cadena[i] != top(pila1)) return 0;
+          ^~~~~~~~~~
+Compilation failed
+3e6d982
