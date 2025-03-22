@@ -175,3 +175,14 @@ exercises.c:123:7: error: invalid use of void expression
        ^~~~
 Compilation failed
 45647a9
+Fri, Mar 21, 2025 11:15:45 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:123:19: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+       push(pila1, (void*)(cadena[i]));
+                   ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b5f51c4
