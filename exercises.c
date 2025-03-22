@@ -128,7 +128,7 @@ int parentesisBalanceados(char *cadena) {
    }
    if(contador % 2 == 1) return 0;
    for(int i = 0 ; cadena[i] != '\0' ; i++) {
-      if(&cadena[i] == top(pila)) return 0;
+      if(&cadena[i] == (char*)top(pila)) return 0;
       pop(pila);
    }
    return 1;
