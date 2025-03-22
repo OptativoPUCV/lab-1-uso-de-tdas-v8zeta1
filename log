@@ -103,3 +103,19 @@ exercises.c:124:19: error: invalid type argument of unary '*' (have 'int')
                    ^~~~~~~~~~
 Compilation failed
 e8394d1
+Fri, Mar 21, 2025 11:10:43 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:124:19: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(pila1, cadena[i]);
+                   ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'char'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+469a8f4
