@@ -268,3 +268,14 @@ Fri, Mar 21, 2025 11:28:41 PM:
  tests:  5|1
 total_score: 50/70
 7698936
+Fri, Mar 21, 2025 11:30:52 PM: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:128:20: error: comparison between pointer and integer [-Werror]
+       if(cadena[i] == top(pila)) return 0;
+                    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+24755a9
